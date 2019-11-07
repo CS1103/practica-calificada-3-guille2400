@@ -1,6 +1,10 @@
 #include <iostream>
+#include <fstream>
+#include "Operar.cpp"
+using namespace std;
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+int main()
+{
+
     return 0;
 }
