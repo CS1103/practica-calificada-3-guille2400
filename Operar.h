@@ -20,6 +20,10 @@ public:
     void sort_load_info(const string &file_name);
     void promedio(const pair<string, int> &a, const pair<string, int> &b);
     void grabar_info(const string &file_name);
+    void borrar_info();
+    int mayor_Precio(map<string,int> map1);
+    int menor_Precio(map<string,int> map1);
+
 };
 
 

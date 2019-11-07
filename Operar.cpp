@@ -75,7 +75,38 @@ void Operar::grabar_info(const string &file_name)
 
 }
 
+int Operar::mayor_Precio(map<string, int> map1)
+{
+    auto iterator = map1.begin();
+    int valor_mayor = iterator->second;
+    for(auto it = iterator; it != map1.end(); it++ )
+    {
+        if (it->second > valor_mayor)
+            valor_mayor = it->second;
+    }
+    return valor_mayor;
+}
 
+int Operar::menor_Precio(map<string, int> map1)
+{
+    auto iterator = map1.begin();
+    int valor_menor = iterator->second;
+    for(auto it = iterator; it != map1.end(); it++ )
+    {
+        if (it->second < valor_menor)
+            valor_menor = it->second;
+    }
+    return valor_menor;
+}
+
+void Operar::borrar_info()
+{
+    for (auto & i : vecautilizar)
+    {
+        if (i.second < 1)
+            vecautilizar.erase( );
+    }
+}
 
 
 
